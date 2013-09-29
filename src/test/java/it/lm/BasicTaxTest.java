@@ -31,6 +31,6 @@ public class BasicTaxTest {
         final TaxResult res = BasicTax.instance().apply(cd);
         Assert.assertEquals(res.getOriginalPrice(), valueOf(14.99d));
         Assert.assertEquals(res.getTaxedPrice(), valueOf(16.49d));
-        Assert.assertEquals(res.getTaxPayed(), valueOf(1.50d));
+        Assert.assertEquals(res.getTaxPayed(), valueOf(1.50d).setScale(2));
     }
 }

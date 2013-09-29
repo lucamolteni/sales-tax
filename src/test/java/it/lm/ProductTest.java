@@ -32,4 +32,14 @@ public class ProductTest {
         final Product p = new Product(1, Type.Other, "music CD Led Zeppelin 1", Boolean.FALSE);
         Assert.assertTrue(p.isTaxable());
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void noProductWithoutName() {
+        final Product p = new Product(1, Type.Other, null, Boolean.TRUE);
+    }
+
+    @Test
+    public void twoProductEquals() {
+        final Product p = new Product(1, Type.Book, "")
+    }
 }
