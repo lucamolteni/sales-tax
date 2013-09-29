@@ -1,4 +1,4 @@
-package it.lm.test;
+package it.lm;
 
 import it.lm.product.Product;
 import it.lm.product.Type;
