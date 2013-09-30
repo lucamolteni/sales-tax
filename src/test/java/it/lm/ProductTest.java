@@ -40,6 +40,14 @@ public class ProductTest {
 
     @Test
     public void twoProductEquals() {
-        final Product p = new Product(1, Type.Book, "")
+        final Product p = new Product(1, Type.Book, "Book", Boolean.TRUE);
+        Assert.assertEquals(p, p);
+    }
+
+    @Test
+    public void twoProductNotEquals() {
+        final Product p1 = new Product(1, Type.Book, "Book", Boolean.TRUE);
+        final Product p2 = new Product(1, Type.Book, "Book", Boolean.FALSE);
+        Assert.assertNotSame(p1, p2);
     }
 }

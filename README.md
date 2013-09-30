@@ -1,7 +1,5 @@
-Soluzione al sales tax exercise
+Sales Tax Exercise
 ================================
-
-Specifica:
 
 This problem requires some kind of input. You are free to implement any mechanism for feeding input into
 your
@@ -16,7 +14,7 @@ When I purchase items I receive a receipt which lists the name of all the items 
 
 The rounding rules for sales tax are that for a tax rate of n%, a shelf price of p contains (np/100 rounded up to the nearest 0.05) amount of sales tax.
 
-Write an application that prints out the receipt details for these shopping baskets...
+Write an application that prints out the receipt details for these shopping baskets.
 
 INPUT:
 
@@ -57,8 +55,6 @@ Output 3:
 1 imported box of chocolates: 11.85
 Sales Taxes: 6.70
 Total: 74.68
-
-
 
 Si può eseguire con
 
